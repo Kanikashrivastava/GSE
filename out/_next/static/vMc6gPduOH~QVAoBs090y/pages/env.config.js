@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{270:function(n,e,o){__NEXT_REGISTER_PAGE("/env.config",function(){return n.exports=o(271),{page:n.exports.default}})},271:function(n,e){n.exports={"process.env.BACKEND_URL":"/githubSearchEngine/"}}},[[270,0]]]);
