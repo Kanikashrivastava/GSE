@@ -2,8 +2,7 @@
   "name": "githubSearch",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://kanikashrivastava.github.io/githubSearchEngine/",
-  "main": "index.js",
+    "main": "index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
