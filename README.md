@@ -5,7 +5,7 @@
 ### `clone it`
 
 Clone the project with the following command. <br>
-git clone https://github.com/Kanikashrivastava/missingChildrenApp.git
+git clone https://github.com/Kanikashrivastava/GSE.git
 
 ### `npm start`
 
