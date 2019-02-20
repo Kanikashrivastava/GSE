@@ -146,7 +146,7 @@ class User extends React.Component {
         <AppBar position="static" className={classes.root}>
           <Toolbar>
             <Typography variant="h6" color="inherit" noWrap>
-              Github Search Engine..
+              Github Search Engine...
             </Typography>
             <div />
             <div />

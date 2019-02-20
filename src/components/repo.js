@@ -11,9 +11,10 @@ const styles = theme => ({
     marginRight: theme.spacing.unit * 2,
     marginTop: theme.spacing.unit * 3,
     boxShadow: "5px 5px 5px 5px #ded5d5",
-    backgroundColor: "#e0d8d8",
+    cursor: "pointer",
+    backgroundColor: "white",
     '&:hover': {
-      backgroundColor: "white",
+      backgroundColor: "#e0d8d8",
     },
     width: theme.spacing.unit * 75,
     [theme.breakpoints.up('sm')]: {
@@ -67,7 +68,7 @@ class Repostries extends React.Component {
           {userRepoInfo.map((value,key) => (
             <Card className={classes.card}>
               <CardContent>
-                <a href={value.html_url}>
+                <a href={value.html_url} target="_blank">
                   <Typography className={classes.heading}>
                     {value.name}
                   </Typography>
@@ -75,13 +76,14 @@ class Repostries extends React.Component {
                   <Typography className={classes.url}>
                     {value.full_name}
                   </Typography>
-                </a>
+                
                 <Typography className={classes.language}>
                   {value.language}
                 </Typography>
                 <span className={classes.date}>
                   Updated on {value.updated_at}
                 </span>
+                </a>
               </CardContent>
             </Card>
           ))}

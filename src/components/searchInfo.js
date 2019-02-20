@@ -81,7 +81,7 @@ class SearchInfo extends React.Component {
           <CardContent>
             <img src={userDetails.avatar_url} className={classes.image} />
             <CardActions>
-              <a href={userDetails.html_url}>
+              <a href={userDetails.html_url} target="_blank">
                 <Button size="small" className={classes.Button}>
                   View profile
                 </Button>

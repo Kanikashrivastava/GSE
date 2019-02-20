@@ -1,7 +1,7 @@
-var dll_432a16c8ff7eb962bf93 =
+module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = {};
+/******/ 	var installedModules = require('../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -18,7 +18,13 @@ var dll_432a16c8ff7eb962bf93 =
 /******/ 		};
 /******/
 /******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 		var threw = true;
+/******/ 		try {
+/******/ 			modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 			threw = false;
+/******/ 		} finally {
+/******/ 			if(threw) delete installedModules[moduleId];
+/******/ 		}
 /******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.l = true;
@@ -82,19 +88,45 @@ var dll_432a16c8ff7eb962bf93 =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/*!***************!*\
-  !*** dll dll ***!
-  \***************/
+/******/ ({
+
+/***/ "./node_modules/next/dist/pages/_document.js":
+/*!***************************************************!*\
+  !*** ./node_modules/next/dist/pages/_document.js ***!
+  \***************************************************/
 /*! no static exports found */
-/*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__;\n\n//# sourceURL=webpack://%5Bname%5D_%5Bchunkhash%5D/dll_dll?");
+module.exports = __webpack_require__(/*! next/document */ "next/document")
+
+
+/***/ }),
+
+/***/ 2:
+/*!*********************************************************!*\
+  !*** multi ./node_modules/next/dist/pages/_document.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! C:\Users\sonalika\Documents\react-apps\githubSearchEngine\node_modules\next\dist\pages\_document.js */"./node_modules/next/dist/pages/_document.js");
+
+
+/***/ }),
+
+/***/ "next/document":
+/*!********************************!*\
+  !*** external "next/document" ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/document");
 
 /***/ })
-/******/ ]);
+
+/******/ });
+//# sourceMappingURL=_document.js.map
